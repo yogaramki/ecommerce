@@ -3,6 +3,8 @@ import { useParams } from "react-router-dom";
 import { ProductList } from "../data/ProductList";
 import { useDispatch } from "react-redux";
 import { addItem } from "../redux/reducer/cart";
+// import 'bootstrap/dist/css/bootstrap.min.css'
+// import Caros from '../Components/Caros'
 
 export default function Product() {
   const params = useParams();
@@ -18,6 +20,7 @@ export default function Product() {
 
   return (
     <div className="card m-2 ">
+      {/* <div><Caros /></div> */}
       <div className="mt-2">
         <img
           src={items.thumbnail}
